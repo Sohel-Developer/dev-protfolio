@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --main-color: #e02f6b;
+  --blue: #0000ff;
+  --blue-dark: #18293c;
+  --orange: #ffa500;
+  --green-yellow: #cddc39;
+  --pink-light: #efa2b4;
+  --cyan-light: #aef1ee;
+  --white: #ffffff;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --backdrop-filter-blur: blur(5px);
+}
+
+
+
+.btn {
+  line-height: 1.5;
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  padding: 10px 28px;
+  display: inline-block;
+  border-radius: 30px;
+  color: var(--main-color);
+  font-weight: 500;
+  text-transform: capitalize;
+  text-transform: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right,
+      var(--pink-light),
+      var(--cyan-light));
+  background-attachment: fixed;
+  font-size: 16px;
+  color: var(--blue-dark);
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 35px 15px;
+}
+
+body.hide-scrolling {
+  overflow-y: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--green-yellow);
+  z-index: -1;
+  opacity: 0.12;
+  padding: 5vh 15px;
+}
+
+.Main {
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  min-height: calc(100vh - 70px);
+  border-radius: 30px;
+  backdrop-filter: var(--backdrop-filter-blur);
+
+}
