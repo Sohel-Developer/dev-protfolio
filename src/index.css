@@ -17,6 +17,10 @@
   --backdrop-filter-blur: blur(5px);
 }
 
+.bg-alpha {
+  background-color: var(--white-alpha-25);
+}
+
 
 
 .btn {
@@ -75,7 +79,40 @@ body::before {
   background-color: var(--white-alpha-25);
   border: 1px solid var(--white-alpha-40);
   min-height: calc(100vh - 70px);
-  border-radius: 30px;
+  border-radius: 10px;
   backdrop-filter: var(--backdrop-filter-blur);
 
+}
+
+.text-animation {
+  color: black;
+  background: linear-gradient(to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.About__img {
+  background-color: var(--white-alpha-25);
+  max-width: 380px;
+  border: 1px solid var(--white-alpha-40);
+  margin: auto;
+  border-radius: 10px;
 }

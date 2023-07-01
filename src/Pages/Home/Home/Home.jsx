@@ -2,13 +2,15 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
     return (
-        <div className=" flex justify-between items-center md:h-[700px]">
+        <div className=" md:flex justify-evenly items-center md:h-[600px]">
 
 
             <div className='space-y-5'>
-                <h4 className="text-xl">Hello I Am</h4>
+                <h4 className="text-xl font-bold">Hello, I Am</h4>
                 <h1 className="text-7xl">Sohel Rana</h1>
-                <h6 className='text-[#e02f6b]'>
+                {/* <p className='text-xl'>A passionate web developer from <span className='font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500  to-pink-500'> Bangladesh. </span></p> */}
+                <p className='text-xl '>A passionate web developer from Bangladesh.</p>
+                <h6 className='text-animation'>
                     <TypeAnimation
                         preRenderFirstString={true}
                         sequence={[
@@ -23,7 +25,7 @@ const Home = () => {
                         speed={50}
                         style={{ fontSize: '1.5em' }}
                         repeat={Infinity}
-                    />
+                    />_
                 </h6>
             </div>
             <div className="">
