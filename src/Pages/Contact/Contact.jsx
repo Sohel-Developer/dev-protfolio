@@ -1,10 +1,24 @@
-import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { Button, Label, TextInput, Textarea } from 'flowbite-react';
+import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
     return (
         <div className=' flex   items-center h-[700px] justify-around'>
             <form className="flex w-[400px] flex-col gap-4">
+                <div>
+                    <div className="mb-2 block">
+                        <Label
+                            htmlFor="name"
+                            value="Your Name"
+                        />
+                    </div>
+                    <TextInput
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                        type="text"
+                    />
+                </div>
                 <div>
                     <div className="mb-2 block">
                         <Label
@@ -14,7 +28,7 @@ const Contact = () => {
                     </div>
                     <TextInput
                         id="email1"
-                        placeholder="name@flowbite.com"
+                        placeholder="Your Email"
                         required
                         type="email"
                     />
@@ -22,22 +36,17 @@ const Contact = () => {
                 <div>
                     <div className="mb-2 block">
                         <Label
-                            htmlFor="password1"
-                            value="Your password"
+                            htmlFor="message"
+                            value="Your Message"
                         />
                     </div>
-                    <TextInput
-                        id="password1"
+                    <Textarea
+                        id="message"
                         required
-                        type="password"
+                        type="Your Message"
                     />
                 </div>
-                <div className="flex items-center gap-2">
-                    <Checkbox id="remember" />
-                    <Label htmlFor="remember">
-                        Remember me
-                    </Label>
-                </div>
+
                 <Button type="submit">
                     Submit
                 </Button>
@@ -57,7 +66,12 @@ const Contact = () => {
 
                 <div>
                     <h2>Follow Me</h2>
-                    <FaFacebook />
+                    <div className='flex items-center space-x-4 my-2'>
+
+                        <a href="https://www.facebook.com/Sohel.webdevoloper/"><FaFacebook /></a>
+                        <a href="https://github.com/Sohel-Developer"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/sohel-developer/"><FaLinkedinIn /></a>
+                    </div>
                 </div>
             </div>
         </div>

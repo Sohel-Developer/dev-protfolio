@@ -1,7 +1,9 @@
 
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Manubar.css'
 import { Button, Navbar } from 'flowbite-react';
+// import Resume from '../../../public/Sohel_Developer_Resume.pdf'
+import Resume from '../../assets/Sohel_Developer_Resume.pdf'
 
 const Manubar = () => {
 
@@ -23,7 +25,7 @@ const Manubar = () => {
                 <div className="flex md:order-2">
                     <Button className='' >
 
-                        <Link to="https://drive.google.com/file/d/1-4vDXzmVKx8m2s4BfcuG07OtX6BNIcqu/view?usp=sharing" target='_blank' download="Sohel_Developer_Resume.pdf">Download Resume</Link>
+                        <a href={Resume} download="Sohel_Developer_Resume">Download Resume</a>
 
                     </Button>
                     <Navbar.Toggle />

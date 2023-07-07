@@ -22,14 +22,14 @@ const About = () => {
                 <div>
                     <h2 className="text-xl mb-2 uppercase font-serif font-bold"> &lt; Expreance. /&gt;</h2>
                     <div className="space-y-2 mb-5">
-                        <h3>Programming Hero-- Web Development</h3>
+                        <h3 className="font-semibold">Programming Hero-- Web Development</h3>
                         <p>Dedication And Hard Working Student.</p>
                     </div>
                     <div className="space-y-2 mb-5">
-                        <h3>LWS-Think In A Redux Way</h3>
+                        <h3 className="font-semibold">LWS-Think In A Redux Way</h3>
                         <p>Dedication And Hard Working Student.</p>
                     </div>
-                    <h2 className="text-2xl uppercase  font-bold"> &lt; Self-Learner. /&gt;</h2>
+                    <h2 className=" uppercase  font-bold"> &lt; Self-Learner. /&gt;</h2>
 
                 </div>
 

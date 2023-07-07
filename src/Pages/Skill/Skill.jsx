@@ -6,7 +6,7 @@ const Skill = () => {
             <div>
                 <h4 className="text-center text-xl font-bold my-5">Expretness</h4>
 
-                <div className=" flex flex-wrap gap-5 justify-center">
+                <div className=" flex flex-wrap md:w-1/2 md:mx-auto gap-5 justify-center">
 
                     <SkillItem Name="HTML5" />
                     <SkillItem Name="CSS" />
@@ -48,6 +48,7 @@ const Skill = () => {
                     <SkillItem Name="Netlify" />
                     <SkillItem Name="Dev-Tool" />
                     <SkillItem Name="Discord" />
+                    <SkillItem Name="Figma" />
                 </div>
             </div>
         </div>

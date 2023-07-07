@@ -17,6 +17,33 @@
   --backdrop-filter-blur: blur(5px);
 }
 
+/* Hover Image */
+
+.image-container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.image-container img {
+  position: absolute;
+  top: 0%;
+  /* bottom: 0%; */
+  transition: transform 1.5s ease-in-out;
+  transform: translateY(0%);
+
+}
+
+.image-container:hover img {
+  /* top: 0%; */
+  /* bottom: 100%; */
+  transform: translateY(-50%);
+}
+
+
+/* Custome Code */
+
 .bg-alpha {
   background-color: var(--white-alpha-25);
 }

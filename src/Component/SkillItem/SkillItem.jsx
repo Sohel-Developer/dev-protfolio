@@ -2,8 +2,8 @@
 
 const SkillItem = ({ Name }) => {
     return (
-        <div className="bg-alpha p-4 rounded-md border border-white">
-            <span className="  text-center  rounded-md  text-animation font-semibold  "> {Name}</span>
+        <div className="bg-alpha px-4 py-1 rounded-3xl border  border-white">
+            <span className="  text-center  rounded-md   "> {Name}</span>
         </div>
     );
 };
