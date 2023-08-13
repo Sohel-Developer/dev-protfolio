@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "name": "Music School",
-        "image": "https://i.ibb.co/LkcwxsG/music-school.png",
-        "live": "https://music-school-9e40b.web.app/",
-        "clint": "https://github.com/Sohel-Developer/music-school-clint",
-        "server": "https://github.com/Sohel-Developer/music-school-server"
+        "name": "Coffee Shop ",
+        "image": "https://i.ibb.co/CnncdDZ/Coffee-shop.png",
+        "live": "https://coffee-shop-bd.web.app/",
+        "clint": "https://github.com/Sohel-Developer/coffee-shop",
+        "server": "https://github.com/Sohel-Developer/coffee-shop-server"
     },
     {
         "id": 2,
@@ -14,5 +14,13 @@
         "live": "https://baby-toy-car.web.app/",
         "clint": "https://github.com/Sohel-Developer/baby-toys",
         "server": "https://github.com/Sohel-Developer/baby-toys-server"
+    },
+    {
+        "id": 3,
+        "name": "Music School",
+        "image": "https://i.ibb.co/LkcwxsG/music-school.png",
+        "live": "https://music-school-9e40b.web.app/",
+        "clint": "https://github.com/Sohel-Developer/music-school-clint",
+        "server": "https://github.com/Sohel-Developer/music-school-server"
     }
 ]

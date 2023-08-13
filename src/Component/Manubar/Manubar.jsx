@@ -2,7 +2,6 @@
 import { NavLink } from 'react-router-dom';
 import './Manubar.css'
 import { Button, Navbar } from 'flowbite-react';
-// import Resume from '../../../public/Sohel_Developer_Resume.pdf'
 import Resume from '../../assets/Sohel_Developer_Resume.pdf'
 
 const Manubar = () => {
